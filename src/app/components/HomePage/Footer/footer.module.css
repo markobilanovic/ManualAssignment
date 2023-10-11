@@ -1,0 +1,108 @@
+.footer {
+    background: var(--grandfather-60, #E8EFE9);
+    padding: 4.25rem 8.625rem 0;
+}
+
+.footer_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.875rem;
+    padding-bottom: 4.5rem;
+    border-bottom: 1px solid #BDCDC5;
+}
+
+.logo {
+    width: 4.6875rem;
+    height: 4.6875rem;
+    flex-shrink: 0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1.56rem;
+}
+
+.menu_column {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    gap: 1.25rem;
+    width: 10.875rem;
+}
+
+.menu_title {
+    color: var(--father-hero, #0B3B3C);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Heading 7 (10px) */
+    font-family: TT Norms;
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0.9375rem; /* 150% */
+    letter-spacing: 0.09375rem;
+    text-transform: uppercase;
+
+}
+
+.menu_item {
+
+    color: var(--father-hero, #0B3B3C);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Body 4 (16px) */
+    font-family: TT Norms;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.875rem; /* 187.5% */
+    text-decoration: unset;
+}
+
+.socials {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.footer_bottom {
+    padding:  1.56rem 0;
+    text-align: center;
+
+    color: var(--grandfather-30, #6D8A83);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Body 4 (16px) */
+    font-family: TT Norms;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.875rem; /* 187.5% */
+}
+
+
+@media only screen and (max-width: 992px) {
+    .footer {
+        padding: 4.25rem 0;
+    }
+    .footer_top {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 2.5rem;
+        gap: 5.25rem;
+    }
+
+    .menu {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        gap: 5.25rem;
+    }
+    .menu_column {
+        align-items: center;
+    }
+    .socials {
+        justify-content: center;
+    }
+}

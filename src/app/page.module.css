@@ -1,0 +1,20 @@
+.services_text {
+  margin: 4.37rem 0;
+  color: var(--father-hero, #0B3B3C);
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.75rem; /* 150% */
+  letter-spacing: -0.075rem;
+
+  text-align: center;
+}
+
+@media only screen and (max-width: 992px) {
+    .services_text {
+        font-size: 1.875rem;
+        line-height: 2.8125rem; /* 150% */
+    }
+}

@@ -1,0 +1,127 @@
+.root {
+    display: flex;
+    padding-bottom: 5.62rem;
+}
+
+.root:not(:first-child) {
+    margin-top: 5.62rem;
+}
+
+.contentWrapper {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-l-2xl);
+}
+
+.reverseWrapper {
+    flex-direction: row-reverse;
+}
+
+.textArea {
+    flex: 0 0 23.125rem;
+    width: 22.4357rem;
+}
+
+.number {
+    position: absolute;
+    z-index: -1;
+    color: var(--grandfather-80, #F3F7F4);
+    font-feature-settings: 'clig' off, 'liga' off;
+    /*font-family: TT Norms;*/
+    font-size: 28.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.125rem; /* 100% */
+    letter-spacing: -0.84375rem;
+}
+
+.title {
+    color: var(--grandfather-30, #6D8A83);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Heading 7 (10px) */
+    font-family: TT Norms;
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 0.9375rem; /* 150% */
+    letter-spacing: 0.09375rem;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    margin-top: 0.62rem;
+    margin-bottom: 1.38rem;
+
+    color: var(--father-hero, #0B3B3C);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    align-self: stretch;
+    /* Heading 4 (28px) */
+    font-family: TT Norms;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.5rem; /* 142.857% */
+    letter-spacing: -0.0525rem;
+}
+
+.description {
+    color: var(--father-hero, #0B3B3C);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    align-self: stretch;
+    /* Body 3 (18px) */
+    font-family: TT Norms;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.875rem; /* 166.667% */
+}
+
+.img {
+    width: 23.125rem;
+    height: 27.8125rem;
+    /*object-fit: contain;*/
+}
+
+.n01 {
+    left: 33%;
+}
+
+.n02 {
+    left: 2%;
+}
+
+
+
+@media only screen and (max-width: 992px) {
+    .root {
+        padding-bottom: 3.62rem;
+    }
+    .root:not(:first-child) {
+        margin-top: 4.32rem;
+        margin-bottom: 4.32rem;
+    }
+    .contentWrapper {
+        flex-direction: column;
+    }
+    .contentWrapper:nth-child(odd) {
+        flex-direction: column-reverse;
+    }
+    .textArea {
+        flex: unset;
+    }
+    .number {
+        left: unset;
+        bottom: 0;
+        font-size: 18.125rem;
+        line-height: 15.125rem;
+    }
+}
+
+

@@ -1,0 +1,19 @@
+.root {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.message {
+    font-size: var(--size-step-0);
+    padding: 0 var(--space-l-2xl);
+    text-align: center;
+}
+
+.homeLink {
+    font-size: var(--size-step-1);
+    color: var(--grandfather-30);
+    margin-top: 2rem;
+}
